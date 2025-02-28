@@ -3,21 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <meta name="description" content="Стоматологическая клиника">
+    <title>Стоматологическая клиника</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Учебные материалы, статьи и советы для студентов-стоматологов.">
-    <meta name="keywords" content="стоматологические материалы, учебные материалы, статьи по стоматологии, советы для студентов-стоматологов">
-    <meta name="google-site-verification" content="1RJzfuzne">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Главная</a> |
-        <a href="materials.html">Учебные материалы</a> |
-        <a href="articles.html">Статьи и советы</a>
-    </nav>
+    <header>
+        <div class="logo">Стоматологическая клиника</div>
+        <nav>
+            <ul>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Добро пожаловать на сайт студентов-стоматологов!</h1>
-    <p>Здесь вы найдёте <strong>стоматологические материалы</strong>, <strong>учебные материалы по стоматологии</strong>, статьи и советы для успешного обучения.</p>
+    <main>
+        <section id="hero">
+            <h1>Добро пожаловать в нашу стоматологическую клинику</h1>
+            <p>Ваши зубы в надежных руках.</p>
+            <a href="#contact" class="cta-button">Записаться на прием</a>
+        </section>
+
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <div class="service">
+                <h3>Стоматология</h3>
+                <p>Всё от профилактики до сложных случаев.</p>
+            </div>
+            <div class="service">
+                <h3>Пародонтология</h3>
+                <p>Лечение заболеваний десен и поддержание здоровья полости рта.</p>
+            </div>
+            <div class="service">
+                <h3>Эстетическая стоматология</h3>
+                <p>Улыбка вашей мечты.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы команда высококвалифицированных специалистов с многолетним опытом работы. Наша цель - обеспечить качественное лечение для каждого пациента.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Контактная информация</h2>
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Стоматологическая клиника. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
